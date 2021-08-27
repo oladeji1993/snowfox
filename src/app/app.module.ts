@@ -10,6 +10,11 @@ import { TestimonialsComponent } from './snow-fox/testimonials/testimonials.comp
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ApplyModalComponent } from './snow-fox/apply-modal/apply-modal.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { NgxSpinnerModule } from 'ngx-spinner';
+
 
 
 @NgModule({
@@ -26,7 +31,13 @@ import { ApplyModalComponent } from './snow-fox/apply-modal/apply-modal.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule,
+    ReactiveFormsModule,   
+    HttpClientModule,
+    NgxSpinnerModule,
+    ToastrModule.forRoot({
+      toastClass: 'toast toast-bootstrap-compatibility-fix'
+    }),
+    // MatDialogModule,
     // matDialogAnimations
  
   ],

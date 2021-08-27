@@ -8,6 +8,10 @@ import { HeaderComponent } from '../components/header/header.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { ApplyModalComponent } from './apply-modal/apply-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { ToastrModule } from 'ngx-toastr';
+
 
 
 @NgModule({
@@ -23,6 +27,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     CommonModule,
     SnowFoxRoutingModule,
     MatDialogModule,
+    ReactiveFormsModule,
+    NgxSpinnerModule,
+    ToastrModule.forRoot(),
+
+
 
 
 

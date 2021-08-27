@@ -13,11 +13,19 @@
     background-image:url('/assets/images/bg3.jpg'),linear-gradient(rgba(226, 187, 101, 0.5),rgba(89, 66, 18, 0.5));
     background-position:50% 50%;
     background-blend-mode: overlay;
-    // text-align: center;
-    padding-top: 15%;
+    text-align: center;
+    // padding-top: 15%;
     // opacity:1
   }
 
+  #background-layer {
+    width: 1000px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+  }
 
   .layer {
     background-color: #f695178a;
@@ -260,13 +268,13 @@
 @media (max-width: 700px) {
   .header{
     font-size: 2rem !important;
-    color:brown !important;
+    // color:brown !important;
     margin-bottom: 20px !important;
   }
 
 
   .sub-header{
-    color:brown !important
+    // color:brown !important
   }
 }
 

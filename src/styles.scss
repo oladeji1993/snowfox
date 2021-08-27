@@ -8,3 +8,26 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+// regular style toast
+@import '~ngx-toastr/toastr';
+
+.toast {
+    font-size: initial !important;
+    padding:20px !important;
+    border: initial !important;
+    backdrop-filter: blur(0) !important;
+    color: #fff !important;
+  }
+  .toast-success {
+    background-color: #51A351 !important;
+  }
+  
+  .toast-warning {
+    background-color: #BD362F !important;
+  }
+  .toast-info {
+    background-color: #2F96B4 !important;
+  }
+  
