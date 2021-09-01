@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ToastrModule } from 'ngx-toastr';
+import { BenefitsComponent } from './benefits/benefits.component';
 
 
 
@@ -19,7 +20,8 @@ import { ToastrModule } from 'ngx-toastr';
     SnowFoxComponent,
     HeaderComponent,
     FooterComponent,
-    ApplyModalComponent
+    ApplyModalComponent,
+    BenefitsComponent
   
   ],
   entryComponents:[ApplyModalComponent],

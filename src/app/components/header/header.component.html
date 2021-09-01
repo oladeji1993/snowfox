@@ -31,13 +31,13 @@
             Home
           </a>
 
-          <a id="about" class="  item" style="font-size: 20px;margin-right:50px;color:#FFF; font-weight: 550;">
+          <a [routerLink]="['benefits']" class="  item" style="font-size: 20px;margin-right:50px;color:#FFF; font-weight: 550;">
            Benefits
           </a>
 
-          <a href="" class="  item" style="font-size: 20px;color:#FFF; font-weight: 550;">
+          <!-- <a href="" class="  item" style="font-size: 20px;color:#FFF; font-weight: 550;">
             Contact Us
-          </a>
+          </a> -->
         </div>
 
         <!-- sidebar -->
@@ -49,17 +49,13 @@
             </div>
               <div class="main-menu" style="margin-left:10px;">
                 <div style="border-right: 1px solid rgb(201, 193, 193); background-color: #fff;">
-                    <div style="padding-top: 13px; padding-bottom: 13px;  padding-left:5px" class="menu">
+                    <div [routerLink]="['home']"  (click)=" removeSideBar()" style="padding-top: 13px; padding-bottom: 13px;  padding-left:5px" class="menu">
                         <i class="far fa-star"></i>
-                        <a href="#" style="text-decoration: none; color:#000; line-height: 1; font-size: 14px;">Home</a>
+                        <a style="text-decoration: none; color:#000; line-height: 1; font-size: 14px;">Home</a>
                     </div>
-                    <div style="padding-top: 13px; padding-bottom: 13px; padding-left:5px" class="menu">
+                    <div [routerLink]="['benefits']"  (click)=" removeSideBar()" style="padding-top: 13px; padding-bottom: 13px; padding-left:5px" class="menu">
                         <i class="fas fa-republican"></i>
-                        <a href="#" style="text-decoration: none; color:#000; font-size: 14px;">Benefits</a>
-                    </div>
-                    <div style="padding-top: 13px; padding-bottom: 13px;  padding-left:5px;" class="menu">
-                        <i class="fas fa-tshirt"></i>
-                        <a href="#" style="text-decoration: none; color:#000; font-size: 14px;">Contact Us</a>
+                        <a style="text-decoration: none; color:#000; font-size: 14px;">Benefits</a>
                     </div>
                 </div>
             </div>
@@ -74,17 +70,6 @@
               <i class="fas fa-bars"></i>
             </label>
           </div>
-          <!-- <div class="search-group">
-              <select>
-                <option value="all">All</option>
-                <option value="all">Mens</option>
-                <option value="all">Womens</option>
-                <option value="all">Winter</option>
-                <option value="all">Summer</option>
-              </select>
-            <input type="text" style="padding:5px" placeholder="I'm shopping for...">
-            </div>
-          <div><button class="search-button" style="padding: 7px 10px"><i class="fas fa-search"></i></button></div> -->
           
         </div>
       </div>

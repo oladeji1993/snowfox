@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   openDialog(){
-    this.dialog.open(ApplyModalComponent,{height:'500px',width:'500px'});
+    this.dialog.open(ApplyModalComponent,{height:'550px',width:'500px'});
   }
 
 

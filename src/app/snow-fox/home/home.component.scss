@@ -19,9 +19,9 @@
   }
 
   #background-layer {
-    width: 1000px;
+    width: 800px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 
@@ -267,15 +267,22 @@
 
 @media (max-width: 700px) {
   .header{
-    font-size: 2rem !important;
-    // color:brown !important;
+    font-size: 1.5rem !important;
     margin-bottom: 20px !important;
   }
 
+  
+  #background-layer {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
-  .sub-header{
-    // color:brown !important
   }
+
+
+
 }
 
 

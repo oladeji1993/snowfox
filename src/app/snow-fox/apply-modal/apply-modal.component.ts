@@ -3,6 +3,8 @@ import { UsersService } from '../../SHARED/services/users/users.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { Router } from '@angular/router';
+import { MatDialogRef } from '@angular/material/dialog';
 
 
 
@@ -19,7 +21,9 @@ export class ApplyModalComponent implements OnInit {
     public fb: FormBuilder,
     private usersService: UsersService,
     private spinner: NgxSpinnerService,
-    private notificationService: NotificationService
+    private notificationService: NotificationService,
+    private router: Router,
+    public dialogRef: MatDialogRef<ApplyModalComponent>
 
 
   ) { }
@@ -37,11 +41,6 @@ export class ApplyModalComponent implements OnInit {
     return this.signupForm.controls;
   }
 
-  // showSuccess() {
-  //   this.notificationService.showWarning('Hello world!', 'Toastr fun!');
-  //   this.spinner.show()
-  // }
-
   registerUser(){
     this.submitted = true;
     if(this.signupForm.invalid){
@@ -51,16 +50,22 @@ export class ApplyModalComponent implements OnInit {
       console.log(this.signupForm.value)
       this.usersService.register(this.signupForm.value).subscribe((resp:any)=>{
         console.log(resp)
-        this.spinner.hide()
-        this.notificationService.showSuccess(resp.message, "success")
-        this.signupForm.reset()
-        // location.reload()
+        if(resp.status == 200){
+          this.spinner.hide()
+          this.router.navigate(['snowFox/benefits'])
+          this.dialogRef.close();          
+          this.notificationService.showSuccess(resp.message, "success")
+        }else{
+          this.spinner.hide()
+          this.dialogRef.close();          
+          this.notificationService.showWarning(resp.message, "error")
+          this.signupForm.reset()
+        }
       },(err=>{
         this.notificationService.showWarning("Error", "error")
+        this.spinner.hide()
         console.log(err)
       }))
     }
   }
-
-
 }

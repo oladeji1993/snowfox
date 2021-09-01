@@ -1,0 +1,133 @@
+.image-back{
+    height:45em; 
+    background-size:cover;
+    width:auto;
+    background-image:url('/assets/images/benefits.jpg'),linear-gradient(rgba(226, 187, 101, 0.5),rgba(89, 66, 18, 0.5));
+    background-position:50% 50%;
+    background-blend-mode: overlay;
+    text-align: center;
+    // padding-top: 15%;
+    // opacity:1
+  }
+
+  #background-layer {
+    width: 1000px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+
+  .layer {
+    background-color: #f695178a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+}
+
+
+
+
+
+
+
+.y-us-section {
+    padding: 82px 0 82px;
+  }
+  .y-us-head {
+    text-align: center !important;
+    margin: 0 0 91px;
+  }
+  .y-us-title h2 {
+    color: #000;
+    font-size: 45px;
+    letter-spacing: 0;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .y-us-title > p {
+    color: #777777;
+    line-height: 22px;
+  }
+  .y-us-title-border {
+    background: #ffae11 none repeat scroll 0 0;
+    border-radius: 2px;
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width: 50px;
+  }
+  .service-3 .service-box {
+    margin-bottom: 18px;
+  }
+  .service-3 .service-box .iconset {
+    float: left;
+    text-align: center;
+    width: 25%;
+  }
+  .service-3 .service-box .iconset i {
+    color: #000;
+    font-size: 44px;
+  }
+  .service-3 .service-box .y-us-content {
+    float: left;
+    width: 75%;
+  }
+  service-3 .service-box .y-us-content h3 {
+    color: #3a3a3a;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 14px 0 12px;
+    text-transform: uppercase;
+  }
+  .service-3 .service-box .y-us-content p {
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  
+  .icon {
+    color: #f4b841;
+    padding: 0px;
+    font-size: 40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+  }
+
+  @media (max-width: 700px) {
+    .header{
+      font-size: 1.5rem !important;
+      margin-bottom:20px;
+      margin-bottom: 20px !important;
+    }
+  
+    
+    #background-layer {
+      width: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  
+    }
+
+    .y-us-title h2 {
+        color: #000;
+        font-size: 30px;
+    }
+  
+  
+  
+}
+  
